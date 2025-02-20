@@ -1,29 +1,48 @@
 {
-	"name": "lambda-cron",
-	"version": "0.1.6",
-	"description": "Super light weight Serverless Plugin to simplify adding cron jobs to functions",
-	"main": "./dist/index.js",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsup",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "levi",
-	"repository": {
-		"url": "https://github.com/levi-20/lambda-cron"
-	},
-	"license": "MIT",
-	"devDependencies": {
-		"@types/node": "22.10.7",
-		"@types/serverless": "^3.12.23",
-		"serverless": "^3.0.0",
-		"ts-node": "^10.9.2",
-		"tsup": "^8.3.5",
-		"tsx": "^4.19.2",
-		"typescript": "^5.7.3"
-	}
+  "name": "lambda-cron",
+  "version": "0.1.6-beta.1",
+  "description": "Super light weight Serverless Plugin to simplify adding cron jobs to aws lambda functions",
+  "author": "levi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/levi-20/lambda-cron"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@serverless/typescript": "^3.38.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "22.10.7",
+    "@types/serverless": "^3.12.23",
+    "jest": "^29.7.0",
+    "serverless": "^3.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [
+    "lambda-cron",
+    "aws lambda cron",
+    "cron",
+    "cron for lambda",
+    "lambda with cron",
+    "serverless cron",
+    "serverless lambda cron",
+    "cronjob",
+    "cron job",
+    "schedule",
+    "scheduler"
+  ],
+  "license": "MIT"
 }
